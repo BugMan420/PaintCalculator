@@ -15,6 +15,6 @@ public class Calculator {
         System.out.println(NumberOfPaintCans);
 
         System.out.println("To paint the house with " + PaintName + " you will need " + NumberOfPaintCans +
-                " cans of paint, which will cost you £" + (NumberOfPaintCans*(CostPerPaintCaninPence)));
+                " cans of paint, which will cost you £" + (NumberOfPaintCans*(CostPerPaintCaninPence))+"Thank you!");
     }
 }
