@@ -23,9 +23,16 @@ public class Calculator {
         BigDecimal PaintCanNum = new BigDecimal(NumberOfPaintCans);
         BigDecimal TotalPrice = CostPerPaintCaninPence.multiply(PaintCanNum);
 
-        System.out.println(WallSurfaceAreaInSqm);
-        System.out.println(NumberOfPaintCans);
-
+        switch(NumberOfPaintCans)
+        {
+            case 0: System.out.println("You don't even need to paint your house");
+            break;
+            case 1,2,3: System.out.println("You probably have this amount of paint laying around.");
+            break;
+            default: System.out.println("You should contact the Bug Boys to buy some more paint.");
+            break;
+        }
+        
         System.out.println("Welcome "+ UserName + ". To paint the house with " + PaintName + " you will need " + NumberOfPaintCans +
                 " cans of paint, which will cost you £" + TotalPrice  +" Thank you!");
         if (NumberOfPaintCans > 6)
