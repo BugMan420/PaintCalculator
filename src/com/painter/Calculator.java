@@ -12,6 +12,8 @@ public class Calculator {
         String UserName = InputLine.nextLine();
         System.out.println("How much does your paint cost?:");
         BigDecimal CostPerPaintCaninPence = new BigDecimal(InputLine.nextLine());
+        String PaintRec = (CostPerPaintCaninPence.doubleValue() > 9.50)?"Did you know a can of Bug paint costs £9.50":"You can get better quality paint for only £9.50 from the Bug Boys";
+        System.out.println(PaintRec);
         System.out.println("What is the total height of your walls in mm?");
         double WallHeightInmm = Double.parseDouble(InputLine.nextLine());
         System.out.println("What is the total width of your walls in mm?");
@@ -26,5 +28,13 @@ public class Calculator {
 
         System.out.println("Welcome "+ UserName + ". To paint the house with " + PaintName + " you will need " + NumberOfPaintCans +
                 " cans of paint, which will cost you £" + TotalPrice  +" Thank you!");
+        if (NumberOfPaintCans > 6)
+        {
+            System.out.println("I would recommend using the services of The Bug Boy Painters.");
+        }
+        else
+        {
+            System.out.println("This is a DIY Job. Call Some Friends and have some fun!");
+        }
     }
 }
