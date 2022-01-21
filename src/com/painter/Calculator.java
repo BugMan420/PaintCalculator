@@ -32,7 +32,7 @@ public class Calculator {
             default: System.out.println("You should contact the Bug Boys to buy some more paint.");
             break;
         }
-        
+
         System.out.println("Welcome "+ UserName + ". To paint the house with " + PaintName + " you will need " + NumberOfPaintCans +
                 " cans of paint, which will cost you £" + TotalPrice  +" Thank you!");
         if (NumberOfPaintCans > 6)
