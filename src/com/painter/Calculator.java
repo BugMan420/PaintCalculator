@@ -17,7 +17,6 @@ public class Calculator {
         Scanner InputLine = new Scanner (System.in);
         String PaintName = "Bug Paint";
 
-
         int PaintCoveragePerCanInSqm = 8;
 
         System.out.println("Enter your first name please:");
